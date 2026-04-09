@@ -1,0 +1,8 @@
+(globalThis["webpackChunk_canva_web"] = globalThis["webpackChunk_canva_web"] || []).push([[68585],{
+
+/***/ 17525:
+function(_, __, __webpack_require__) {__webpack_require__.n_x = __webpack_require__.n;const __web_req__ = __webpack_require__;__web_req__(905716);globalThis._456c437108d2d2713799e19380be528d = globalThis._456c437108d2d2713799e19380be528d || {};(function(__c) {var La=__c.La;var M=__c.M;var B=__c.B;__c.lib=B(()=>({phoneNumber:M("phoneNumber",1),countryCode:__c.N("countryCode",2)}));__c.mib=B(()=>({user:M("user",1),phoneNumber:M("phoneNumber",2),state:M("state",3),vaa:__c.O("supportErrorResponse",4),Ve:__c.u("riskContext",8,__c.Bp)}));__c.nib=B(()=>({userId:M(1),La:__c.N(2),limit:__c.mj(3,100)}));__c.oib=__c.D(()=>[1],1);__c.pib=B(()=>({user:M(1),brand:__c.N(4),types:La(2,__c.cp),vPa:La(5,__c.ep),components:La(3,__c.oib)}));__c.Hq=B(()=>({user:M(1),brand:__c.N(3),types:La(2,__c.cp),vPa:La(4,__c.ep)}));
+}).call(globalThis, globalThis._456c437108d2d2713799e19380be528d);}
+
+}])
+//# sourceMappingURL=sourcemaps/bc1b92edb3b3db69.js.map

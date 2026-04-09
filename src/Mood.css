@@ -1,0 +1,88 @@
+label{
+    color: rgb(252, 249, 249);
+}
+
+.card {
+  width: 90%;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-image: url('/src/assets/mood.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  background: linear-gradient(to right, #FF69B4, #33CC33, #6666CC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  font-size: 18px;
+   background: linear-gradient(to right, #1fc73b, #cc7333, #cc66b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.question {
+  margin-bottom: 20px;
+
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.option-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  color: #fff;
+}
+
+.option-btn.selected {
+  border: 2px solid #000;
+}
+
+.submit-btn {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.result {
+  text-align: center;
+}
+
+.result-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff; /* Change text color to white for better visibility */
+}
+
+#mood-chart {
+  border: 10px solid #ddd;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+    margin: 20px auto;
+  }
+}
+

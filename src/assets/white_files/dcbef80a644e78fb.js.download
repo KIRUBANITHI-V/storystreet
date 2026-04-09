@@ -1,0 +1,8 @@
+(globalThis["webpackChunk_canva_web"] = globalThis["webpackChunk_canva_web"] || []).push([[91027],{
+
+/***/ 668593:
+function(_, __, __webpack_require__) {__webpack_require__.n_x = __webpack_require__.n;const __web_req__ = __webpack_require__;__web_req__(905716);globalThis._456c437108d2d2713799e19380be528d = globalThis._456c437108d2d2713799e19380be528d || {};(function(__c) {var byc,ayc;byc=function(a,b){return ayc.toArray(Array.from(b,(c,d)=>{if(c instanceof Element){const e=byc(a,c.childNodes),f=a.qoc.get(c.tagName.toUpperCase());if(f)try{return f(c,e,d)}catch(g){a.onError?.(g)}return e}if(c instanceof Text)return c.textContent}))};__c.xE=function(a,b,c){a.qoc.set(b.toUpperCase(),c);return a};ayc=__webpack_require__(978109).Children;__c.yE=class{render(a){return byc(this,this.UTd.parseFromString(a,"text/html").body.childNodes)}constructor(a){this.onError=a;this.qoc=new Map;this.UTd=new DOMParser}};
+}).call(globalThis, globalThis._456c437108d2d2713799e19380be528d);}
+
+}])
+//# sourceMappingURL=sourcemaps/dcbef80a644e78fb.js.map

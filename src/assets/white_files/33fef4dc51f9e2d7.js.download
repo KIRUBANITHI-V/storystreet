@@ -1,0 +1,8 @@
+(globalThis["webpackChunk_canva_web"] = globalThis["webpackChunk_canva_web"] || []).push([[60875],{
+
+/***/ 578072:
+function(_, __, __webpack_require__) {__webpack_require__.n_x = __webpack_require__.n;const __web_req__ = __webpack_require__;__web_req__(905716);globalThis._456c437108d2d2713799e19380be528d = globalThis._456c437108d2d2713799e19380be528d || {};(function(__c) {__c.aq=function(a){return __c.We(__c.Ue(__c.Dh(a)))+"/"};__c.$gb=function(a,b){return new __c.fBa({path:__c.aq(a.r9e),target:__c.zi(b?.target)})};__c.bq=function(a,b){const c=typeof b==="string"?()=>({eb:b}):b;return d=>__c.G(__c.dh,{...c(d),children:(0,__c.G)(a,{...d})})};__c.cq=class{static groupBy(a,b,c){c=!!c?.laf;const d=new Map;for(const e of a)a=b(e),c&&a==null||__c.cq.add(d,a,e);return d}static add(a,b,c){const d=a.get(b);d?d.push(c):a.set(b,[c])}static addAll(a,...b){for(const c of b)for(const [d,e]of c)(b=a.get(d))?b.push(...e):a.set(d,e.slice());return a}static *values(a){for(const b of a.values())yield*b}static *entries(a){for(const [b,c]of a)for(const d of c)yield[b,d]}static fromEntries(a){const b=new Map;for(const [c,d]of a)__c.cq.add(b,c,d);return b}};
+}).call(globalThis, globalThis._456c437108d2d2713799e19380be528d);}
+
+}])
+//# sourceMappingURL=sourcemaps/33fef4dc51f9e2d7.js.map

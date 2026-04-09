@@ -1,0 +1,64 @@
+.cardd {
+  width: 90%;
+  max-width: 18rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+  margin: 50px auto;
+  background-image: url('/src/assets/lion.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.yes-btn {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  width: 80%;
+}
+
+.no-btn {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 80%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+@media (min-width: 768px) {
+  .buttons {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .yes-btn, .no-btn {
+    width: auto;
+    margin: 0 10px;
+  }
+}
+
+p{
+  color: #fff;
+}
+
+h2{
+  color: #dcdc0f;
+}
