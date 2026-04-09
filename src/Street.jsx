@@ -15,7 +15,8 @@ function Street() {
 
   return (
     <div className="cards">
-      <img src="/src/assets/storystreet.jpeg" alt="Story Image"/>
+     {/* <img src="/src/assets/storystreet.jpeg" alt="Story Image"/> */}
+      <img src="/storystreet.jpeg" alt="Story Image" />
       <h2>Welcome to</h2>
       <h1>The Story Street</h1>
       <p>Do you like to hear stories?</p>
