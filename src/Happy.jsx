@@ -1,75 +1,81 @@
-  import React, { useState, useEffect } from 'react';
-  import './Happy.css';
+import React, { useState, useEffect } from 'react';
+import './Happy.css';
 
+// ✅ Correct paths (after moving to public/Relax/)
+const images = [
+  '/Relax/1.png',
+  '/Relax/2.png',
+  '/Relax/2.1.png',
+  '/Relax/3.png',
+  '/Relax/4.png',
+  '/Relax/5.png',
+  '/Relax/6.png',
+  '/Relax/7.png',
+  '/Relax/8.png',
+  '/Relax/9.png',
+  '/Relax/10.png',
+  '/Relax/11.png',
+  '/Relax/12.png',
+  '/Relax/13.png',
+  '/Relax/14.png',
+  '/Relax/16.png',
+  '/Relax/17.png',
+  '/Relax/18.png',
+  '/Relax/19.png',
+  '/Relax/20.png',
+  '/Relax/21.png',
+];
 
-  const images = [
-    '/src/assets/happy/0.png',
-    '/src/assets/happy/1.png',
-    '/src/assets/happy/2.png',
-    '/src/assets/happy/3.png',
-    '/src/assets/happy/4.png',
-    '/src/assets/happy/6.png',
-    '/src/assets/happy/8.png',
-    '/src/assets/happy/9.png',
-    '/src/assets/happy/10.png',
-    '/src/assets/happy/11.png',
-    '/src/assets/happy/12.png',
-    '/src/assets/happy/13.png',
-    '/src/assets/happy/14.png',
-    
-    '/src/assets/happy/16.png',
-    '/src/assets/happy/17.png',
-    '/src/assets/happy/18.png',
-    '/src/assets/happy/19.png',
-    '/src/assets/happy/20.png',
-    '/src/assets/happy/21.png',
-    '/src/assets/happy/22.png',
-    '/src/assets/happy/23.png',
-    '/src/assets/happy/24.png',
-    '/src/assets/happy/25.png',
-    '/src/assets/happy/26.png',
-    '/src/assets/happy/27.png',
-    
-    
-    // Add more images here
-  ];
+function Relaxed() {
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  function Happy () {
-    const [currentIndex, setCurrentIndex] = useState(0);
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentIndex((prevIndex) =>
+        (prevIndex + 1) % images.length
+      );
+    }, 20000);
 
-    useEffect(() => {
-      const intervalId = setInterval(() => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-      }, 20000);
+    return () => clearInterval(intervalId);
+  }, []);
 
-      return () => clearInterval(intervalId);
-    }, []);
-
-    const handlePrev = () => {
-      setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
-    };
-
-    const handleNext = () => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    };
-
-    return (
-      <div className="slideshow-container">
-        {images.map((image, index) => (
-          <div
-            key={index}
-            className={`slide ${index === currentIndex ? 'active' : ''}`}
-            style={{ backgroundImage: `url(${image})` }}
-          />
-        ))}
-        <button className="prev-btn" onClick={handlePrev}>
-          {'<<'}
-        </button>
-        <button className="next-btn" onClick={handleNext}>
-          {'>>'}
-        </button>
-      </div>
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) =>
+      (prevIndex - 1 + images.length) % images.length
     );
   };
 
-  export default Happy;
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) =>
+      (prevIndex + 1) % images.length
+    );
+  };
+
+  return (
+    <div className="slideshow-container">
+
+      {images.map((image, index) => (
+        <div
+          key={index}
+          className={`slide ${
+            index === currentIndex ? 'active' : ''
+          }`}
+          style={{
+            backgroundImage: `url(${image})`
+          }}
+        />
+      ))}
+
+      <button className="prev-btn" onClick={handlePrev}>
+        {'<<'}
+      </button>
+
+      <button className="next-btn" onClick={handleNext}>
+        {'>>'}
+      </button>
+
+    </div>
+  );
+}
+
+export default Relaxed;
