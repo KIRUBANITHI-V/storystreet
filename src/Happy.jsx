@@ -65,7 +65,7 @@ function Happy() {
       setCurrentIndex(
         (prevIndex) => (prevIndex + 1) % images.length
       );
-    }, 20000);
+    }, 30000);
 
     return () => clearInterval(intervalId);
   }, []);
