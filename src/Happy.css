@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100dvh; /* ✅ Fix mobile viewport */
   overflow: hidden;
 }
 
@@ -12,11 +12,16 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
-  background-size: cover;
+  height: 100dvh; /* ✅ Fix mobile viewport */
+
+  background-size: contain; /* ✅ Show full image */
   background-position: center;
+  background-repeat: no-repeat;
+
   opacity: 0;
   transition: opacity 2s ease-in-out;
+
+  background-color: black; /* optional side fill */
 }
 
 .slide.active {
@@ -25,9 +30,9 @@
 
 .prev-btn {
   position: absolute;
-  top: 50%;              /* Move to middle */
+  top: 50%;
   left: 20px;
-  transform: translateY(-50%); /* Perfect vertical center */
+  transform: translateY(-50%);
   background-color: transparent;
   border: none;
   font-size: 24px;
@@ -38,9 +43,9 @@
 
 .next-btn {
   position: absolute;
-  top: 50%;              /* Move to middle */
+  top: 50%;
   right: 20px;
-  transform: translateY(-50%); /* Perfect vertical center */
+  transform: translateY(-50%);
   background-color: transparent;
   border: none;
   font-size: 24px;
