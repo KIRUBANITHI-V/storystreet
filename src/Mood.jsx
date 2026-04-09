@@ -2,17 +2,11 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Mood.css';
 
-const backgroundMusic = '/src/assets/hedwigs_theme.mp3';
+// ✅ Import audio correctly
+import backgroundMusic from "./assets/hedwigs_theme.mp3";
 
 function Mood() {
   const navigate = useNavigate();
-  const [score, setScore] = useState(0);
-  const [mode, setMode] = useState('');
-  const [feeling, setFeeling] = useState('');
-  const [energy, setEnergy] = useState('');
-  const [outlook, setOutlook] = useState('');
-  const [life, setLife] = useState('');
-  const [submitted, setSubmitted] = useState(false);
   const audioRef = useRef(null);
 
   useEffect(() => {
@@ -23,6 +17,7 @@ function Mood() {
         });
       }
     }, 1000);
+
     return () => clearTimeout(timeoutId);
   }, []);
 
