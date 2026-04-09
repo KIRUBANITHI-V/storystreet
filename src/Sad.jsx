@@ -43,7 +43,7 @@ function Sad() {
       setCurrentIndex((prevIndex) =>
         (prevIndex + 1) % images.length
       );
-    }, 10000);
+    }, 25000);
 
     return () => clearInterval(intervalId);
   }, []);
