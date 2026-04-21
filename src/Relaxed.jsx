@@ -56,7 +56,7 @@ function Relaxed() {
       setCurrentIndex(
         (prevIndex) => (prevIndex + 1) % images.length
       );
-    }, 30000);
+    }, 45000);
 
     return () => clearInterval(intervalId);
   }, []);
